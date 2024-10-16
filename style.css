@@ -2,11 +2,11 @@
 
 /* ตั้งค่าพื้นหลังของ carousel */
 .carousel-item {
-    height: 400px; /* ความสูงของแบนเนอร์ */
+    height: 200px; /* ความสูงของแบนเนอร์ */
 }
 
 .carousel-item img {
-    height: 100%; /* ให้ภาพเต็มความสูง */
+    height: 80%; /* ให้ภาพเต็มความสูง */
     object-fit: cover; /* ปรับการแสดงผลภาพ */
 }
 
