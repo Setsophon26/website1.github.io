@@ -92,20 +92,7 @@ a{
 <body>
 
 
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-
-        // Toast Function for Order Confirmation
-        function showOrderToast() {
-            var toastElement = document.getElementById('orderToast');
-            var toast = new bootstrap.Toast(toastElement);
-            toast.show();
-        }
-    </script>
+     <div id="navbar-placeholder"></div> <!-- Navbar placeholder -->
     
  
 
@@ -212,7 +199,14 @@ a{
     </div>
     
 
+     <div id="footer-placeholder"></div> <!-- Footer placeholder -->
     <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
         fetch('footer.html')
             .then(response => response.text())
             .then(data => {
