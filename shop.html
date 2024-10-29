@@ -92,8 +92,7 @@ a{
 <body>
 
 
-     <div id="navbar-placeholder"></div> <!-- Navbar placeholder -->
-    
+     <div id="navbar-placeholder"></div>
  
 
 
@@ -209,16 +208,14 @@ a{
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
 
-     <div id="footer-placeholder"></div> <!-- Footer placeholder -->
+      <div id="footer-placeholder"></div> <!-- Footer placeholder --> 
+    <!-- Navbar & Footer Scripts -->
     <script>
-       
-<script>
-        fetch('footer.html')
+        fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
+                document.getElementById('navbar-placeholder').innerHTML = data;
             });
-
         fetch('footer.html')
             .then(response => response.text())
             .then(data => {
@@ -227,11 +224,7 @@ a{
 
         // Toast Function for Order Confirmation
         function showOrderToast() {
-            var toastElement = document.getElementById('orderToast');
-            var toast = new bootstrap.Toast(toastElement);
-            toast.show();
-        }
-    </script>
+            var toastElement = document.getElementBy
     
 
 
